@@ -1,0 +1,49 @@
+name: FishingPonds
+version: '${project.version}'
+main: me.stephenminer.fishingponds.FishingPonds
+api-version: 1.13
+authors: [ Meep ]
+load: POSTWORLD
+
+commands:
+  pondWand:
+    permission: fp.commands.wand
+    description: gives sender a wand to define pond regions
+    usage: /pondWand
+  pond:
+    permission: fp.commands.ponds
+    description: Opens gui to edit specified pond region
+    usage: /pond [region]
+  resize-pond:
+    permission: fp.commands.resize
+    description: Allows sender to resize a specified pond region with the pond-wand
+    usage: /resize-pond [region]
+  pondBorder:
+    permission: fp.commands.showborder
+    description: Shows a border for the player surrounding the specified region
+    usage: /pondBorder [region]
+  deletePond:
+    permission: fp.commands.delete
+    description: Deletes the specified region from files
+    usage: /deletePond [region]
+  unlockPond:
+    permission: fp.commands.unlock
+    description: Unlocks warp to specified pond for a specified player
+    usage: /unlockPond [region] [player] [true/false]
+  pondWarp:
+    description: Warps sender to specified pond if they have it unlocked
+  pondSpawn:
+    permission: fp.commands.spawn
+    description: Defines the spawn location for a pond region as the sender's current location, where the player will warp to
+    usage: /pondSpawn [region]
+  giveBait:
+    permission: fp.commands.bait
+    usage: /giveBait [bait-id] [player] [# of items]
+    description: bait-id is whatever you defined in bait.yml
+  giveBag:
+    permission: fp.commands.givebag
+    usage: /giveBag [player] [LARGE/MEDIUM/SMALL] [BAIT/FISH/NONE]
+  goldFish:
+    permission: fp.commands.goldfish
+    description: Sets the "golden fish" item to whatever is in your hand
+

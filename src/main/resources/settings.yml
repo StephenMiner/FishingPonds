@@ -1,0 +1,7 @@
+settings:
+  disable-nat-fishing: true
+  golden-fish:
+    min-time: 100
+    max-time: 100
+    chance: 0.5
+

@@ -1,0 +1,29 @@
+bait:
+  common:
+    name: Common Bait
+    material: PAPER
+    modifier: 1.2
+    uses: 4
+    lore:
+      - x1.2 catch speed
+  uncommon:
+    name: Uncommon Bait
+    material: PAPER
+    modifier: 2
+    uses: 4
+    lore:
+      - x2 catch speed
+  rare:
+    name: Rare Bait
+    material: PAPER
+    modifier: 2.5
+    uses: 4
+    lore:
+      - x2.5 catch speed
+  legendary:
+    name: Legendary Bait
+    material: PAPER
+    modifier: 3
+    uses: 4
+    lore:
+      - x3 catch speed
